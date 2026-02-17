@@ -1,0 +1,52 @@
+{
+  "skill_name": "ink",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Build me an interactive CLI todo list using Ink. It should let me add tasks by typing, mark them done with Enter, and delete with 'd'. Show incomplete tasks in white and completed in green with a checkmark.",
+      "expected_output": "A complete Ink-based CLI todo app with: useInput for keyboard handling, useState for task list, completed tasks in green with checkmark, incomplete tasks in white, instructions visible, and proper exit handling.",
+      "files": [],
+      "assertions": [
+        "Uses Ink's useInput hook for keyboard handling",
+        "Uses useState to manage task list state",
+        "Completed tasks are rendered with green color",
+        "Uses <Box> and <Text> components for layout",
+        "Includes import of render from ink",
+        "Handles 'd' key for deletion",
+        "Handles Enter/return key for marking done",
+        "Shows some form of instructions or hints to the user"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Create a CLI file upload progress indicator using Ink that shows multiple file uploads happening simultaneously. Each file should have a progress bar, filename, and percentage. Style it nicely with borders.",
+      "expected_output": "An Ink component rendering multiple file progress bars in a bordered layout, showing filename, a visual progress bar, and percentage. Uses flexbox layout properly.",
+      "files": [],
+      "assertions": [
+        "Uses <Box> with borderStyle for a bordered container",
+        "Renders multiple file entries with filename and percentage",
+        "Creates a visual progress bar using Box width percentage or character fill",
+        "Uses flexDirection column for stacking file entries",
+        "Imports and uses render from ink",
+        "Uses color to indicate progress or status",
+        "Output is well-structured and readable"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "I want a simple Ink CLI spinner that shows 'Fetching data...' while waiting, then displays the result. How do I set this up with the ink-spinner package?",
+      "expected_output": "Code showing how to install ink-spinner, import Spinner, use useState/useEffect for loading state, conditionally render spinner vs result.",
+      "files": [],
+      "assertions": [
+        "Shows npm install command for ink-spinner",
+        "Imports Spinner from ink-spinner",
+        "Uses useState to track loading state",
+        "Uses useEffect to trigger async work",
+        "Conditionally renders Spinner when loading",
+        "Renders result text when done loading",
+        "Uses <Text> components throughout",
+        "Includes render() call"
+      ]
+    }
+  ]
+}
